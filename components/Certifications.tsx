@@ -1,3 +1,7 @@
+"use client";
+
+import { useState } from "react";
+
 const credentials = [
   {
     id: "CRED-01",
@@ -72,7 +76,15 @@ const statusColor: Record<string, string> = {
   planned: "text-muted border-border",
 };
 
+type LightboxItem = {
+  image: string;
+  title: string;
+  org: string;
+};
+
 export default function Certifications() {
+  const [active, setActive] = useState<LightboxItem | null>(null);
+
   return (
     <section id="credentials" className="border-b border-border px-6 py-16">
       <div className="mx-auto max-w-5xl">
@@ -92,11 +104,23 @@ export default function Certifications() {
               </div>
               <div className="flex items-center gap-4">
                 {c.image && (
-                  <img
-                    src={c.image}
-                    alt={c.title}
-                    className="h-16 w-24 rounded border border-border object-cover"
-                  />
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setActive({ image: c.image as string, title: c.title, org: c.org })
+                    }
+                    className="group relative shrink-0"
+                    aria-label={`View ${c.title} certificate`}
+                  >
+                    <img
+                      src={c.image}
+                      alt={c.title}
+                      className="h-16 w-24 rounded border border-border object-cover transition-opacity group-hover:opacity-70"
+                    />
+                    <span className="pointer-events-none absolute inset-0 flex items-center justify-center rounded bg-bg/0 font-mono text-[10px] text-ink opacity-0 transition-opacity group-hover:bg-bg/50 group-hover:opacity-100">
+                      view
+                    </span>
+                  </button>
                 )}
                 <span
                   className={`w-fit whitespace-nowrap rounded border px-2 py-1 font-mono text-xs ${statusColor[c.status]}`}
@@ -111,23 +135,65 @@ export default function Certifications() {
         <p className="mb-6 mt-12 font-mono text-xs text-teal">./events-and-talks</p>
         <div className="grid gap-4 sm:grid-cols-2">
           {events.map((e) => (
-            <div
+            <button
               key={e.title}
-              className="overflow-hidden rounded-lg border border-border bg-panel"
+              type="button"
+              onClick={() => setActive({ image: e.image, title: e.title, org: e.org })}
+              className="group overflow-hidden rounded-lg border border-border bg-panel text-left"
+              aria-label={`View ${e.title} certificate`}
             >
-              <img
-                src={e.image}
-                alt={e.title}
-                className="h-40 w-full object-cover"
-              />
+              <div className="relative">
+                <img
+                  src={e.image}
+                  alt={e.title}
+                  className="h-40 w-full object-cover transition-opacity group-hover:opacity-70"
+                />
+                <span className="pointer-events-none absolute inset-0 flex items-center justify-center bg-bg/0 font-mono text-xs text-ink opacity-0 transition-opacity group-hover:bg-bg/50 group-hover:opacity-100">
+                  view
+                </span>
+              </div>
               <div className="p-4">
                 <p className="text-sm text-ink">{e.title}</p>
                 <p className="text-xs text-muted">{e.org}</p>
               </div>
-            </div>
+            </button>
           ))}
         </div>
       </div>
+
+      {active && (
+        <div
+          className="fixed inset-0 z-50 flex items-center justify-center bg-bg/90 p-6"
+          onClick={() => setActive(null)}
+        >
+          <div
+            className="max-h-[85vh] w-full max-w-2xl overflow-hidden rounded-lg border border-border bg-panel"
+            onClick={(ev) => ev.stopPropagation()}
+          >
+            <div className="flex items-center justify-between border-b border-border px-4 py-3">
+              <div>
+                <p className="font-mono text-sm text-ink">{active.title}</p>
+                <p className="font-mono text-xs text-muted">{active.org}</p>
+              </div>
+              <button
+                type="button"
+                onClick={() => setActive(null)}
+                className="rounded border border-border px-2 py-1 font-mono text-xs text-muted transition-colors hover:border-amber hover:text-amber"
+                aria-label="Close"
+              >
+                close ✕
+              </button>
+            </div>
+            <div className="max-h-[70vh] overflow-auto bg-bg p-4">
+              <img
+                src={active.image}
+                alt={active.title}
+                className="mx-auto max-h-[65vh] w-auto rounded"
+              />
+            </div>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
