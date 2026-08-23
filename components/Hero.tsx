@@ -39,7 +39,7 @@ export default function Hero() {
       id="top"
       className="grid-fade relative overflow-hidden border-b border-border px-6 pb-20 pt-16 sm:pt-24"
     >
-      <div className="mx-auto max-w-5xl">
+      <div className="relative z-10 mx-auto max-w-5xl">
         <div className="scan rounded-lg border border-border bg-panel p-6 shadow-2xl shadow-black/40 sm:p-8">
           <div className="mb-4 flex items-center gap-2">
             <span className="h-3 w-3 rounded-full bg-alert/70" />
