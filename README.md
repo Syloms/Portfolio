@@ -4,7 +4,7 @@ Portfolio showcasing my cybersecurity learning journey — picoCTF write-ups,
 projects, and credentials — as I explore the field and figure out my
 specialization (offense, defense, or somewhere in between).
 
-🔗 Live site: [yourname.vercel.app](https://yourname.vercel.app)
+🔗 Live site: [yourname.vercel.app](https://ethanjames-portfolio.vercel.app/)
 
 ## About
 
