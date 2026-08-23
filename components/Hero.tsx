@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 
 const LINES = [
-  { prompt: "whoami", output: "Your Name — aspiring cybersecurity analyst" },
+  { prompt: "whoami", output: "EthanJames Estino — aspiring cybersecurity analyst" },
   { prompt: "cat status.log", output: "BSIT graduate · Southway College of Technology" },
   { prompt: "ls ./currently-doing", output: "picoCTF exercises, foundational security labs" },
 ];

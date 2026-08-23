@@ -17,7 +17,7 @@ const sans = IBM_Plex_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Your Name — Cybersecurity Portfolio",
+  title: "EthanJames Estino — Cybersecurity Portfolio",
   description:
     "Cybersecurity portfolio: CTF write-ups, projects, and certifications.",
 };
