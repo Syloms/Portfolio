@@ -39,7 +39,10 @@ body {
     transparent 3px
   );
 }
-
+.terminal-fade {
+  mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 100%);
+  -webkit-mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 100%);
+}
 .grid-fade {
   position: relative;
 }
