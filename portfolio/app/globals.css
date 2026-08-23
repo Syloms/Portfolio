@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::selection {
+  background-color: #e8a33d;
+  color: #12161c;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #12161c;
+  color: #e7e9ed;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+  }
+}
+
+/* faint scanline texture on panels, kept subtle */
+.scan {
+  background-image: repeating-linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.015) 0px,
+    rgba(255, 255, 255, 0.015) 1px,
+    transparent 1px,
+    transparent 3px
+  );
+}
+
+.grid-fade {
+  background-image:
+    linear-gradient(to right, rgba(139, 147, 161, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(139, 147, 161, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+  mask-image: radial-gradient(ellipse 60% 50% at 50% 0%, black 40%, transparent 100%);
+}
