@@ -1,4 +1,4 @@
-EthanJames A. Estino — Cybersecurity Portfolio
+## EthanJames A. Estino ## — Cybersecurity Portfolio
 
 Portfolio showcasing my cybersecurity learning journey — picoCTF write-ups,
 projects, and credentials — as I explore the field and figure out my
