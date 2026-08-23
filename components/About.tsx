@@ -10,7 +10,10 @@ export default function About() {
               Flutter developer, now applying that development background to
               cybersecurity — starting with picoCTF exercises to build
               hands-on skill in web exploitation, cryptography, and reverse
-              engineering.
+              engineering. In October 2025 I represented my school's
+              partnered battalion in the Philippine Army's Cyber Defense
+              Exercise Qualifiers, which gave me an early, practical taste of
+              defensive security under real conditions.
             </p>
             <p>
               Coming from software development gives me a head start on
@@ -38,8 +41,12 @@ export default function About() {
                 <dd className="text-right text-ink">Flutter developer</dd>
               </div>
               <div className="flex justify-between gap-4">
-                <dt className="text-muted">agile</dt>
-                <dd className="text-right text-ink">Scrum White &amp; Yellow Belt</dd>
+                <dt className="text-muted">exercise</dt>
+                <dd className="text-right text-ink">Cyber Defense Exercise Qualifiers, PH Army</dd>
+              </div>
+              <div className="flex justify-between gap-4">
+                <dt className="text-muted">process</dt>
+                <dd className="text-right text-ink">Lean Six Sigma White &amp; Yellow Belt</dd>
               </div>
               <div className="flex justify-between gap-4">
                 <dt className="text-muted">focus</dt>
