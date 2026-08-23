@@ -83,7 +83,7 @@ export default function Hero() {
             />
             <div>
               <h1 className="font-mono text-3xl font-semibold text-ink sm:text-4xl">
-                Your Name
+                EthanJames Estino
               </h1>
               <p className="mt-2 max-w-xl text-muted">
                 Early-career, methodical, and building a public record of what I
