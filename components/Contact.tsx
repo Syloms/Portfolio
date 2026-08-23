@@ -1,5 +1,5 @@
 const links = [
-  { label: "email", value: "you@example.com", href: "mailto:ethanjamesestino@gmail.com" },
+  { label: "email", value: "you@example.com", href: "mailto: ethanjamesestino@gmail.com" },
   { label: "github", value: "github.com/yourusername", href: "https://github.com/Sylom" },
   { label: "linkedin", value: "linkedin.com/in/yourname", href: "https://linkedin.com/in/yourname" },
   { label: "tryhackme", value: "tryhackme.com/p/yourname", href: "https://tryhackme.com/p/yourname" },
