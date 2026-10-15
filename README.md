@@ -4,7 +4,7 @@ Portfolio showcasing my cybersecurity learning journey — picoCTF write-ups,
 projects, and credentials — as I explore the field and figure out my
 specialization (offense, defense, or somewhere in between).
 
-🔗 Live site: [yourname.vercel.app](https://ethanjames-portfolio.vercel.app/)
+🔗 Live site: [https://ethanjames-portfolio.vercel.app]
 
 ## About
 
@@ -31,7 +31,7 @@ process publicly rather than waiting to feel "ready."
 ## Running locally
 
 \`\`\`bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/ethanjames/portfolio.git
 cd portfolio
 npm install
 npm run dev
