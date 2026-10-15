@@ -19,33 +19,34 @@ const credentials = [
   },
   {
     id: "CRED-03",
+    title: "Civil Service Examination — Professional Level (Passed)",
+    org: "Civil Service Commission, Region CARAGA",
+    status: "completed",
+    image: "/certs/Examinee_321313_copy_page-0001.jpg",
+  },
+
+  {
+    id: "CRED-04",
     title: "Lean Six Sigma Yellow Belt",
     org: "Council for Six Sigma Certification",
     status: "completed",
     image: "/certs/lss-yellow-belt.jpg",
   },
   {
-    id: "CRED-04",
+    id: "CRED-05",
     title: "Lean Six Sigma White Belt",
     org: "Council for Six Sigma Certification",
     status: "completed",
     image: "/certs/lss-white-belt.jpg",
   },
-    {
-    id: "CRED-05",
+  {
+    id: "CRED-06",
     title: "Introduction to Cybersecurity",
     org: "Cisco Networking Academy",
     status: "completed",
     image: "/certs/cisco-intro-to-cybersecurity.jpg",
   },
   {
-    id: "CRED-06",
-    title: "Webinar Training on Bayesian Statistics: Practical Bayesian Statistics for Biology Teachers & Students",
-    org: "University of Southeastern Philippines",
-    status: "completed",
-    image: "/certs/bayesian-statistics-webinar.jpg",
-  },
-    {
     id: "CRED-07",
     title: "Cybersecurity Fundamentals",
     org: "IBM SkillsBuild",
@@ -54,6 +55,27 @@ const credentials = [
   },
   {
     id: "CRED-08",
+    title: "Cybersecurity",
+    org: "ADBI E-Learning (Asian Development Bank Institute)",
+    status: "completed",
+    image: "/certs/Ethan-James-Estino–Cybersecurity–Cybersecurity–ADBI-E-Learning_copy_page-0001.jpg",
+  },
+  {
+    id: "CRED-09",
+    title: "Webinar Training on Bayesian Statistics",
+    org: "University of Southeastern Philippines",
+    status: "completed",
+    image: "/certs/bayesian-statistics-webinar.jpg",
+  },
+  {
+    id: "CRED-10",
+    title: "picoCTF Practice Track",
+    org: "picoCTF (CMU)",
+    status: "in progress",
+    image: null,
+  },
+  {
+    id: "CRED-11",
     title: "Security+ or equivalent foundational cert",
     org: "planned",
     status: "planned",
